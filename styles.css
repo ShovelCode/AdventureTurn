@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f4f6;
+    margin: 0;
+}
+
+.slideshow-container {
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #333;  /* Optional: adding a border for visual clarity */
+    overflow: hidden;        /* Hide parts of the image that exceed the container */
+    position: relative;      /* Allows positioning of child elements relative to this container */
+}
+
+.slideshow-container img {
+    width: 100%;            /* Set width to always fit the container */
+    height: 100%;           /* Set height to always fit the container */
+    object-fit: cover;      /* Image will cover the entire container without stretching */
+    display: block;         /* Removes any potential margin or alignment issues */
+}
+
+.navigation {
+    position: absolute;     /* Position navigation links on top of the container */
+    bottom: 5px;            /* Push it to the bottom of the container */
+    width: 100%;            /* Make it span the entire width of the container */
+}
+
+.navigation a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
